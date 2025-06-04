@@ -10,24 +10,25 @@ desktop.ini
 *~
 .*.sw[a-p]
 # IDEs comunes
-.idea/                 # JetBrains
-.vscode/               # VSCode
-*.sublime-*            # Sublime Text
+.idea/
+.vscode/
+*.sublime-*
 *.code-workspace
 
 ###############################################################################
 # 2. Archivos de configuración sensible
 ###############################################################################
 
-env					   # Archivo de entorno principal sin extensión
-env.*				   # Variantes de entorno (.env.local, .env.development, etc.) sin extensión
-env_*				   # Variantes de entorno (.env_local, .env_development, etc.) sin extensión
-.env                   # Variable de entorno principal
-.env.*                 # Variantes (.env.local, .env.development, etc.)
-.env_*                 # Variantes (.env_local, .env_development, etc.)
-!.env.example          # Mantén el ejemplo en el repo
-.envrc                 # direnv
-*.key                  # Certificados SSL
+.env
+.env.*
+.env_*
+env
+env.*
+env_*
+!.env.example
+.env.backup
+.envrc
+*.key
 *.pem
 *.p12
 
@@ -36,12 +37,12 @@ env_*				   # Variantes de entorno (.env_local, .env_development, etc.) sin exte
 ###############################################################################
 # Node
 node_modules/
-.pnp.*                 # Yarn Plug’n’Play
+.pnp.*
 # Deno
 .deno_cache/
 deno.lock
 # PHP (Composer)
-vendor/                # Paquetes; Composer recrea
+vendor/
 # Go, Rust o binarios eventuales
 bin/
 target/
@@ -63,11 +64,11 @@ out/
 # 4. Directorios de ejecución / caché
 ###############################################################################
 .cache/
-coverage/              # Reportes de cobertura
+coverage/
 npm-debug.log*
 yarn-debug.log*
 pnpm-debug.log*
-*.log                  # Registros genéricos
+*.log
 tmp/
 temp/
 *.tmp
@@ -77,19 +78,18 @@ temp/
 # 5. Laravel específicos
 ###############################################################################
 /storage/*
-!/storage/app/public   # Mantén symlink de storage público
+!/storage/app/public
 bootstrap/cache/
 .phpunit.result.cache
 
 ###############################################################################
 # 6. Archivos de despliegue o sistema web
 ###############################################################################
-.well-known/*          # Acme-challenge, seguridad; recreable
-*.sql                  # Dumps de BD
-*.sqlite               # Bases locales
+.well-known/*
+#*.sql
+#*.sqlite
 *.zip
 *.gz
-.env.backup
 
 ###############################################################################
 # 7. Contenido a ignorar opcional (activa según tu flujo)
@@ -102,3 +102,4 @@ bootstrap/cache/
 ###############################################################################
 # Fin
 ###############################################################################
+
