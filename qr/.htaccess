@@ -1,0 +1,17 @@
+<IfModule mod_rewrite.c>
+    RewriteEngine On
+
+    # Evitar redirección infinita al excluir track-qr.php
+    RewriteCond %{REQUEST_URI} !^/qr/track-qr.php$
+
+    # Redirigir todo el tráfico de /qr/{codigo} hacia track-qr.php con el parámetro 'code'
+    RewriteRule ^(.*)$ /qr/track-qr.php?code=$1 [L,QSA]
+
+    # Redirigir a la página principal si alguien entra a /qr sin especificar un código
+    RewriteRule ^$ / [R=301,L]
+</IfModule>
+
+<Files ".env_qr">
+    Order Allow,Deny
+    Deny from all
+</Files>

@@ -1,0 +1,104 @@
+###############################################################################
+# 1. Archivos del sistema operativo y editores
+###############################################################################
+# macOS
+.DS_Store
+# Windows
+Thumbs.db
+desktop.ini
+# Linux/vi/emacs
+*~
+.*.sw[a-p]
+# IDEs comunes
+.idea/                 # JetBrains
+.vscode/               # VSCode
+*.sublime-*            # Sublime Text
+*.code-workspace
+
+###############################################################################
+# 2. Archivos de configuración sensible
+###############################################################################
+
+env					   # Archivo de entorno principal sin extensión
+env.*				   # Variantes de entorno (.env.local, .env.development, etc.) sin extensión
+env_*				   # Variantes de entorno (.env_local, .env_development, etc.) sin extensión
+.env                   # Variable de entorno principal
+.env.*                 # Variantes (.env.local, .env.development, etc.)
+.env_*                 # Variantes (.env_local, .env_development, etc.)
+!.env.example          # Mantén el ejemplo en el repo
+.envrc                 # direnv
+*.key                  # Certificados SSL
+*.pem
+*.p12
+
+###############################################################################
+# 3. Dependencias y salidas de build
+###############################################################################
+# Node
+node_modules/
+.pnp.*                 # Yarn Plug’n’Play
+# Deno
+.deno_cache/
+deno.lock
+# PHP (Composer)
+vendor/                # Paquetes; Composer recrea
+# Go, Rust o binarios eventuales
+bin/
+target/
+# Bundlers / frameworks front
+dist/
+build/
+public/build/
+.next/
+out/
+.vite/
+.svelte-kit/
+.parcel-cache/
+.turbo/
+.storybook-static/
+# Mapas de sourcemap grandes
+*.map
+
+###############################################################################
+# 4. Directorios de ejecución / caché
+###############################################################################
+.cache/
+coverage/              # Reportes de cobertura
+npm-debug.log*
+yarn-debug.log*
+pnpm-debug.log*
+*.log                  # Registros genéricos
+tmp/
+temp/
+*.tmp
+*.bak
+
+###############################################################################
+# 5. Laravel específicos
+###############################################################################
+/storage/*
+!/storage/app/public   # Mantén symlink de storage público
+bootstrap/cache/
+.phpunit.result.cache
+
+###############################################################################
+# 6. Archivos de despliegue o sistema web
+###############################################################################
+.well-known/*          # Acme-challenge, seguridad; recreable
+*.sql                  # Dumps de BD
+*.sqlite               # Bases locales
+*.zip
+*.gz
+.env.backup
+
+###############################################################################
+# 7. Contenido a ignorar opcional (activa según tu flujo)
+###############################################################################
+# composer.lock       # SÓLO si prefieres recrear dependencias idénticas por otra vía
+# package-lock.json   # Ídem para npm
+# bun.lockb           # Bun
+# *.iml               # Archivos de proyecto IDEA
+
+###############################################################################
+# Fin
+###############################################################################
