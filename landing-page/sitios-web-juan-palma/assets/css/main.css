@@ -580,10 +580,7 @@ main {
 
 
 
-body{
-	display: flex;
-	justify-content: center;
-}
+
 #fondo_body{
 	background : var(--colorBackDark);
 	background-size: cover;
@@ -913,7 +910,7 @@ body{
 	z-index: 3;
 	overflow: hidden;
 	display: flex;
-	flex-direction: column;
+	justify-content: center;
 }
 
 
