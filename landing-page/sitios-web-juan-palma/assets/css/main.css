@@ -48,7 +48,7 @@
 	--colorTexto: #656E75;
 	--colorTexto2: #ffffff;
 	--colorTexto2R: 255, 255, 255;
-	--margenGlobal: 6vw;
+	--margenGlobal: calc(3vw + 2.6vh);
 	--anchoContainer: calc(100vw - (var(--margenGlobal) * 2));
 
 	--colorIdaNaranja: #D3932D;
@@ -448,7 +448,7 @@ main {
 	.colorT2{
 		color: var(--colorTexto2);
 	}
-	.bold{
+	.bold, strong{
 		font-weight: 700;
 	}
 	.semibold{
@@ -912,9 +912,7 @@ main {
 	display: flex;
 	justify-content: center;
 }
-section{
-	margin-bottom: calc(3vw + 3vh);
-}
+
 
 
 /*:::::: Estilos HOME ::::::*/
@@ -1244,6 +1242,87 @@ section{
 
 
 
+/*Estilos del sitio web*/
+section{
+	margin-bottom: calc(7vw + 7vh);
+}
+aside p {
+    margin: 10px 0;
+}
+h1, .asH1 {
+	font-size: 180%;
+    font-weight: 700;
+}
+h2 {
+    font-size: 136%;
+}
+h3 {
+    font-size: 112%;
+    font-weight: 600;
+    color: var(--colorSecundario);
+    margin: 12px 0;
+}
+ul {
+    padding-inline-start: 18px;
+    display: grid;
+    grid-gap: 5px;
+	line-height: 1.2;
+}
+em {
+    color: darkcyan;
+}
+.tabla {
+    display: flex;
+    flex-direction: column;
+    grid-gap: 4px;
+    font-size: 90%;
+}
+	.fila.head {
+		background: lightslategrey;
+		color: white;
+	}
+	.fila {
+		display: flex;
+		justify-content: space-between;
+		grid-gap: 16px;
+		padding: 5px 12px;
+		border-bottom: 1px dotted var(--colorIdaNaranja);
+	}
+		.celda {
+			flex: 1 1 40%;
+			font-size: 94%;
+			line-height: 1.1;
+		}
+		.celda:last-child {
+			flex: 1 1 60%;
+		}
+			.celda em {
+				color: var(--colorSecundario);
+			}
+form {
+	display: grid;
+    width: 100%;
+    max-width: inherit;
+	margin-top: 24px;
+}
+form > p{
+	margin-bottom: 24px !important;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 
 
 
@@ -1340,9 +1419,6 @@ section{
 	Estilos para un especto de pie
 ========================================================================== */
 @media screen and (orientation:portrait){
-	:root{
-		--margenGlobal: 8vw;
-	}
 	.onlyLanscape{
 		display: none !important;
 		visibility: hidden !important;
@@ -1514,9 +1590,7 @@ section{
 ========================================================================== */
 @media screen and (orientation:portrait) and (max-width: 866px) {
 	/*::: General :::*/
-	:root{
-		--margenGlobal: 8vw;
-	}
+	
 
 }
 
