@@ -580,7 +580,10 @@ main {
 
 
 
-
+body{
+	display: flex;
+	justify-content: center;
+}
 #fondo_body{
 	background : var(--colorBackDark);
 	background-size: cover;
