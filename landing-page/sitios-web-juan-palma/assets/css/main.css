@@ -40,7 +40,7 @@
 :root{
 	--colorBackDark: #ffffff;
 	--colorBackColor: #FFFFFF;
-	--colorPrincipal: #D3932D;
+	--colorPrincipal: #e8941a;
 	--colorPrincipalR: 7, 175, 234;
 	--colorSecundario: #4C4F45;
 	--colorSecundarioR: 2, 51, 79;
@@ -51,7 +51,7 @@
 	--margenGlobal: calc(3vw + 2.6vh);
 	--anchoContainer: calc(100vw - (var(--margenGlobal) * 2));
 
-	--colorIdaNaranja: #D3932D;
+	--colorIdaNaranja: #e8941a;
 	--colorIdaVerde: #4C4F45;
 	--colorIdaBlack: #1B1C1A;
 }
@@ -1250,7 +1250,7 @@ aside p {
     margin: 10px 0;
 }
 h1, .asH1 {
-	font-size: 180%;
+	font-size: 220%;
     font-weight: 700;
 }
 h2 {
