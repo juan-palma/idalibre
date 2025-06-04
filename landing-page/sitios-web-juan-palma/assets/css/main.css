@@ -40,9 +40,9 @@
 :root{
 	--colorBackDark: #ffffff;
 	--colorBackColor: #FFFFFF;
-	--colorPrincipal: #07AFEA;
+	--colorPrincipal: #D3932D;
 	--colorPrincipalR: 7, 175, 234;
-	--colorSecundario: #02334F;
+	--colorSecundario: #4C4F45;
 	--colorSecundarioR: 2, 51, 79;
 	--color3: #50FFDD;
 	--colorTexto: #656E75;
@@ -368,16 +368,14 @@ div#ventanaPOP {
 .noRomperTexto{
 	white-space: nowrap;
 }
-body{
-	overflow: hidden;
-}
+
 main {
     width: 100%;
     min-width: 100%;
     max-width: 100%;
     display: flex;
     flex-direction: column;
-    align-items: center;
+    align-items: flex-start;
 }
 #loadingBox{
 	width: 100%;
