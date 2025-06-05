@@ -1244,7 +1244,7 @@ main {
 
 /*Estilos del sitio web*/
 section{
-	margin-bottom: clamp(1em, calc(7vw + 7vh), 4em);
+	margin-bottom: clamp(1em, calc(5.6vw + 5.6vh), 4em);
 }
 aside p {
     margin: 10px 0;
